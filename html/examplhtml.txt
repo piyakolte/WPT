@@ -1,0 +1,53 @@
+<html>
+ <head>
+      <title>Website|Home</title>
+       <!--comment-->
+       <!--css,meta,link,style,script-->
+  </head>
+
+  <body>
+     <!--Develope all content here in body tag-->
+     <h1>Heading 1</h1>
+     <h2>Heading 2</h2>
+     <h3>Heading 3</h3>
+     <h4>Heading 4</h4>
+     <h5>Heading 5</h5>
+     <h6>Heading 6</h6>
+      <!--block tags-->
+      <p>
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquet, lectus eget sagittis hendrerit, nulla odio aliquam odio, nec porttitor nibh lorem sed metus. Proin a fermentum sapien, vitae consequat dolor. Sed a gravida dui, sit amet euismod sem. Pellentesque lacinia nec nunc ut maximus. Curabitur sed posuere sem. Cras laoreet laoreet purus id ullamcorper. Suspendisse luctus odio sit amet sapien congue, sit amet aliquet dolor pretium. Donec commodo eu est vel condimentum. Cras ante ante, faucibus ultrices neque porta, posuere efficitur tortor. Pellentesque scelerisque turpis ac suscipit rhoncus. Ut augue arcu, tincidunt ac bibendum ac, dignissim sed tellus. Curabitur elit felis, iaculis et auctor vel, feugiat et turpis. Suspendisse ac semper orci, quis venenatis ex. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus a magna lobortis, ornare est at, varius ante.
+
+         Nunc a urna ut eros faucibus ornare. Quisque ultrices odio sed lectus gravida, sodales consequat metus consectetur. Curabitur eget hendrerit sem, at luctus arcu. Mauris et faucibus lorem, vitae facilisis arcu. Phasellus tincidunt quam sed laoreet tristique. Morbi malesuada magna libero. Mauris mattis commodo pellentesque. Donec semper ex vel dolor dapibus scelerisque. Cras ligula turpis, imperdiet a vehicula at, suscipit feugiat diam. Phasellus hendrerit eu ante at lobortis.
+      </p>
+  </body>
+</html>
+
+
+
+
+
+<head>
+     <title>Diwali</title>
+</head>
+<body>
+    <h1>Diwali</h1>
+
+    <h2>Introduction</h2>
+    <p>Diwali, also known as Deepavali, is a major Hindu festival celebrated in India and around the world. 
+       It symbolizes the victory of light over darkness and good over evil.</p>
+
+    <h2>History</h2>
+    <p>The festival has various historical origins, including the return of Lord Rama to Ayodhya after defeating Ravana, as described in the Ramayana. 
+    It also marks the day Lord Krishna defeated the demon Narakasura.</p>
+
+    <h2>Celebrations</h2>
+    <p>Diwali is celebrated with various rituals, including the lighting of oil lamps (diyas), fireworks, and the worship of deities like Lakshmi and Ganesha. Families clean their homes and decorate them with rangoli and lights.</p>
+
+    <h2>Regional Variations</h2>
+    <p>While Diwali is celebrated across India, it has regional variations. In northern India, it often coincides with the harvest festival, while in southern India, it marks the victory of Lord Krishna.</p>
+
+    <h2>Significance</h2>
+    <p>Diwali represents hope, joy, and the triumph of light over darkness. It encourages charity and togetherness among communities.</p>
+
+</body>
+</html>

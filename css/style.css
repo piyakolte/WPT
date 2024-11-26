@@ -1,0 +1,114 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+
+ /* universal selector (using * all) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.kablammo-heading {
+font-family: "Kablammo", system-ui;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
+font-variation-settings:"MORF" 0;
+}
+
+
+/* tag selector */
+div.container {
+    width: 100vw;
+    /* viewport width   100=> 100% width of viewport*/
+    height: 100vh;
+    /* viewport hight  100=>100% complete height of viewport */
+
+    border: black 2px solid;
+    /* border-color,border-width,border-style:"solid/dotted/dashed/insert/outset/double" */
+
+}
+
+/* percent vs viewport */
+header:hovor
+{
+    height: 10vh;
+    background-color:rgb(80, 76, 76);
+
+}
+
+main 
+{
+   
+    height: 70vh;
+    display:flex;
+    justify-content: center;/* horizontal center */
+    align-items:center;  /*vertical center*/
+    background-image: url("bagroundima.jpg");
+    background-size :constant;
+    
+}
+
+footer {
+    height: 20vh;
+    background-color:black;
+}
+.top-heading
+{
+    color:hwb(208 2% 71%);
+    
+}
+.top-para
+{
+    color:#07b49d;
+    background-color:rgb(134, 103, 64);
+    padding-left:10px;
+    padding-top:20px;
+    padding-bottom:30px;
+    margin-top:10px ;
+    font-family: "Playwrite GB S", cursive;
+    font-optical-sizing: auto;
+    font-weight:<weight>;
+    font-style:normal;
+}
+.heading
+{
+        color:hsl(34, 93%, 21%);
+        margin-top: 10px;
+}
+.para{
+    columns:#07b49d ;
+
+    background-color:rgb(134, 103, 64);
+    padding-left:10px ;
+    padding-top: 20px;
+    padding-bottom:30px ;
+    margin-top: 10px;
+}
+.main-content
+{
+    background-color:aqua;
+    height: 80%;
+    width:80%;
+    /* box-shadow:3px 3px 5px black,-3px -3px 5px red,10px 10px 10px blue; */
+    box-shadow:3px 3px 5px black;
+    /*1) +horizontal shadow(right)  -horizontal shadow(left) 
+       2)+vertical shadow(down)   -vertical shadow(up) 
+       blur  
+      color */
+
+      padding:40px 30px 10px ;
+      /* 40px top-bottom   30px left-right    10px bottom */
+      /*    padding:40px 30px 10px 90px ;
+      40px top-bottom   30px left-right    10px bottom    90px left */
+      border-radius:10px;
+      font-family:Arial, Helvetica, sans-serif;
+}
+/* descender selector */
+.main-content h1
+{
+    color:white
+}

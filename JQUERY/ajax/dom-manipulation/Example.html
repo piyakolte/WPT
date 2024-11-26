@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        Dom manipulation
+
+        Dom(document)methods
+
+        createElement() //create tag objet
+    
+        createTextNode()//create text content or content for tag object//hello world
+        <p>hello world</p>
+
+        append methods
+        appendChild()
+        append()
+    
+    
+    </pre>
+
+    <div id="para-box">
+
+    </div>
+    <div id="list-box">
+
+    </div>
+<!-- 
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul>
+    <script>
+        const  ul=document.getElementById("ul")
+        const uli1=document.getElementById("One")
+        const uli2=document.getElementById("Two")
+        const uli3=document.getElementById("Three") -->
+
+        
+
+
+    </script>
+
+
+
+
+      <script>
+    //1
+    //    const div= document.getElementById("para-box")
+    //    const ptag=document.createElement("p")   //<p></p>
+    //    const ptext= document.createTextNode("Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda cupiditate aliquam sequi magni eos neque aliquid ad eum ut omnis iste, repellat, molestias ipsum cum obcaecati, asperiores nesciunt pariatur. Enim!")
+    //    pTag.appendChild(pText) //<p></p>
+    //    div.appendChild(pTag)
+    // <div id="para-box">
+
+    // <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda cupiditate aliquam sequi magni eos neque aliquid ad eum ut omnis iste, repellat, molestias ipsum cum obcaecati, asperiores nesciunt pariatur. Enim!
+    //      </p>
+    // </div>
+
+
+
+
+    //2
+    // const listdiv= document.getElementById("list-box")
+
+    // const ulTag=document.createElement("ul")
+
+    // let litag=document.createElement("li")
+
+    //     const textNode1=document.createTextnode("one")
+    //     const textNode2=document.createTextnode("Two")
+    //     const textNode3=document.createTextnode("Three")
+
+
+    // liTag.appendChild(textnode1)   //<li>One</li>
+    // ulTag.appendChild(liTag)       //<ul><li>One</li></ul>
+       
+    // litag=document.createElement("li") //<li></li>
+    // liTag.appendChild(textnode2)  //<li>Two</li>
+    // ulTag.appendChild(liTag)  //<ul><li>One</li><li>One</li></ul>
+
+    // litag=document.createElement("li") ////<li></li>
+    // liTag.appendChild(textnode3)//<li>Three</li>
+    // ulTag.appendChild(liTag) //<ul><li>One</li><li>One</li><li>Three</li></ul>
+
+    // listDiv.appendChild(ulTag)
+
+
+
+
+    //3 array
+    // const listDiv= document.getElementById("list-box")
+    // const ulTag=document.createElement("ul")
+    // const textNodes=["Nagpur","Pune","Nashik","Mumbai"]
+   
+    // for(text of textNodes)
+    // {
+    //     //let textNode=document.createTextNode(text)
+    //     //let liTag=document.createElement("li")
+    //     let aTag=document.createElement("a")
+    //     aTag.href="https://fonts.google.com/"
+    //     let textNode=document.createTextNode(text)
+    //     aTag.appendChild(textNode)
+    //     let liTag=document.createElement("li")
+
+      
+    //     liTag.appendChild(aTag)
+    //     ulTag.appendChild(liTag)
+    // }
+    //  listDiv.appendChild(ulTag)
+
+
+
+    //4)
+    const listDiv= document.getElementById("list-box")
+    const ulTag=document.createElement("ul")
+    // const textNodes=["Nagpur","Pune","Nashik","Mumbai"]
+    // const url=[
+    //     "https://fonts.google.com/",
+    // "https://www.w3schools.com/python/",
+    // "https://www.w3schools.com/html/",
+    // "https://www.w3schools.com/sql/"
+    // ]
+
+//     consturlsAndText=[
+
+//    {Nagpur: "https://fonts.google.com/"},
+//    {Pune : "https://www.w3schools.com/python/"},
+//    {Nashik: "https://www.w3schools.com/html/"},
+//    {Mumbai:"https://www.w3schools.com/sql/"}
+
+//     ]
+//    const hrefLink="https://fonts.google.com/"
+//    for(let[k,v] of obj.entries(obj)){
+//     let aTag=document.createElement("a")
+//         aTag.href=v
+//        // let textNode=document.createTextNode(k)
+//        aTag.innerHTML=`<b>${k}</b>`
+//         aTag.appendChild(textNode)
+//         let liTag=document.createElement("li")
+//         liTag.appendChild(aTag)
+//         ulTag.appendChild(liTag)
+//    }
+
+
+    // textNodes.forEach((text,i)=>{
+    //     let aTag=document.createElement("a")
+    //     aTag.href="https://fonts.google.com/"
+    //     let textNode=document.createTextNode(text)
+    //     aTag.appendChild(textNode)
+    //     let liTag=document.createElement("li")
+
+      
+    //     liTag.appendChild(aTag)
+    //     ulTag.appendChild(liTag)
+
+    // })
+   
+      
+    // listDiv.appendChild(ulTag)
+
+    const imgTag =document.createElement("img")
+    imgTag.src="image.jpg"
+    imgTag.height="200"
+    listDiv.appendChild(imgTag)
+    
+    listDiv.appendChild(ulTag)
+     
+    
+
+    
+
+    </script>  
+
+    
+</body>
+</html>

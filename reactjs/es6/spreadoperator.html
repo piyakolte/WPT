@@ -1,0 +1,30 @@
+<script>
+//spread operator
+    const arr=[4,676,12,63,89,83]
+    const arr1=[23,71,...arr]
+    console.log(arr1)
+    // arr.forEach(function(e)
+    //{
+    //     arr1.push(e)
+    //})
+
+
+const contact={mobile:"1234567890",city:"Nagpur"}
+//const person={name:"Esha",age:23,...contact}
+let person={name:"Esha",age:23,...contact}
+
+// for(key of object.key(contact))
+// {
+//     person[key]=contact[key]
+//     person["mobile"]="1234567890"
+//     person["city"]="Nagpur"
+// }
+console.log(person)
+
+
+//person={name:"Rahul"}
+person={...person,name:"Rahul"}
+delete person.age
+console.log(person) 
+
+</script>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .board {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-template-rows: repeat(3, 100px);
+      gap: 5px;
+    }
+    .cell {
+      width: 100px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #333;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+    .status {
+      margin-bottom: 20px;
+      font-size: 1.2rem;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <div class="status" id="status">Player X's turn</div>
+    <div class="board" id="board">
+      <!-- Cells will be generated here by JavaScript -->
+    </div>
+    <button id="resetButton">Reset Game</button>
+  </div>
+
+  <script src="tictactoe.js"></script>
+</body>
+</html>
+ss

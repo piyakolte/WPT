@@ -1,0 +1,21 @@
+<script>
+    async function add(n1,n2){
+       // return n1+n2    //resolve
+       return new promise((res,rej)=>{
+       setTimeout(()=> res(n1+n2),3000)
+       })
+    }
+    async function sub(n1,n2){
+        return new promise((resolve,reject)=>{
+        setTimeout(()=> res(n1-n2),3000)
+    })
+   }
+   async function callFunctions() 
+   {
+    let r = await add(21,3)
+    console.log(r)
+    r=await sub(r,10)
+    console.log(r)
+   }
+   callFunctions()
+</script>

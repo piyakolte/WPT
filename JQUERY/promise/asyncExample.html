@@ -1,0 +1,16 @@
+<script>
+    //es6(essential 6) 2015
+   async function show()
+   {
+     return 10 //resolve call  //new promise((resolve,reject)=>resolve(10))
+   }
+   const p=show()
+   console.log(p)
+
+p.then((result)=>{
+    console.log(result)
+})
+
+
+
+</script>

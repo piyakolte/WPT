@@ -1,0 +1,69 @@
+<script>
+    /*
+    split()
+    concat()
+    indexof()
+    toUpperCase()
+    toLowerCase()
+    endsWith()
+    startsWith()
+    charAt() get character at given index
+    subStrings()
+    subStr()
+    slice()
+    ===or==  match string
+    replace()
+    includes(search karta hai)
+    match() [validations: (use with reglular expression)]
+    length(property get length of string)
+
+    trim()...........remove white spaces from both sides of String
+    trimEnd()......remove white spaces from end of String
+    trimStart()....remove white spaces from start of String
+
+
+
+
+    "hello"            : single line string
+    'hello'            : single line string
+
+    `hello this is `   : multi line string
+    */
+
+
+
+   let n="heilo"
+   console.log(n.CharAt(3))
+   console.log(n.CharAt(7))
+
+   console.log(n.toLocaleLowerCase())
+   console.log(n.toLocaleUpperCase())
+
+   console.log(n.length)
+
+   console.log(n.substring(2))  //end is exclusive/excluded (not included)(end -1 is in)
+   console.log(n.substring(2,4))
+
+   console.log(n.substr(1,3))
+ //  substr(startIndex,length)
+   console.log(n.slice(2))
+   console.log(n.slice(2,4))
+
+   const para="This is paragraph to search string."
+
+  console.log(para.endWith)("string")
+  console.log(para.endWith("This is paragraph to search string."))
+  console.log(para.startWith("This is paragraph to search string."))
+  console.log(para.toLowercase().startWith("This".toLowerCase()))
+
+
+  const listWords=para.split("a")
+  console.log(listWords.length)
+  console.table(listWords)
+
+console.log(para.includes("to"))
+console.log(para.includes("To"))
+console.log(para.indexof("to"))
+console.log(para.indexof("is"))
+
+</script>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <button id="get-data">Get Data</button>
+    <button id="get-id-data">Get ID Data(Get)</button>
+    <button id="set-data">Set Data(Post)</button>
+    <button id="upt-data">Update Data(Put)</button>
+    <button id="p-upt-data">Partial Update Data(Patch)</button>
+    <button id="delete-data">Delete Data(Delete)</button>
+
+    <script src="../jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(() => {
+            // $("#get-data").click(() => {
+            //     const response = axios.get("http://127.0.0.1:5500/ajax/sample4.json")
+            //     response.then((response) => {
+            //         console.log(response.data)
+            //     }).catch((err) => {
+            //         console.error(err)
+            //     }) 
+            // })
+            $("#get-data").click(async () => {
+                try {
+                    const response = await axios.get("http://localhost:3000/persons")
+                    console.log(response.data)
+                }
+                catch (err) {
+                    console.error(err)
+                }
+            })
+           
+            $("#get-id-data").click(async () => {
+                try {
+                    const response = await axios.get("http://localhost:3000/persons/1")
+                    //getting person of id=1
+                    console.log(response.data)
+                }
+                catch (err) {
+                    console.error(err)
+                }
+            })
+
+            $("#set-data").click(async () => {
+                try {
+                    const response = await axios.post("http://localhost:3000/persons", {
+                        id: "3",
+                        name: "Mrunal",
+                        age: "24",
+                        mobile: "994465834"
+                    })
+                    //getting person of id=1
+                    console.log(response.data)
+                }
+                catch (err) {
+                    console.error(err)
+                }
+            })
+
+            $("#upt-data").click(async () => {
+                try {
+                    const response = await axios.put("http://localhost:3000/persons/2", {
+                        id: "2",
+                        name: "Rahul",
+                        age: "26",
+                        mobile: "224465834"
+                    })
+                    //getting person of id=1
+                    console.log(response.data)
+                }
+                catch (err) {
+                    console.error(err)
+                }
+            })
+
+            $("#p-upt-data").click(async () => {
+                try {
+                    const response = await axios.patch("http://localhost:3000/persons/2", {
+                      
+                        age: "33",
+                      
+                    })
+                    //getting person of id=1
+                    console.log(response.data)
+                }
+                catch (err) {
+                    console.error(err)
+                }
+            })
+
+            $("#delete-data").click(async () => {
+                try {
+                    const response = await axios.delete("http://localhost:3000/persons/2")
+                    //getting person of id=1
+                    console.log(response.data)
+                }
+                catch (err) {
+                    console.error(err)
+                }
+            })
+
+
+        })
+    </script>
+</body>
+
+</html>

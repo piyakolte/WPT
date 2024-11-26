@@ -1,0 +1,73 @@
+<!-- <script>
+  const p = new Promise((resolve,reject)=>{
+    resolve("success result....")    //then call
+    //reject("error result....") // catch call
+  })
+  
+  p.then ((result)=>{
+     console.log(result)
+  }).catch((err)=>{
+    console.error(err)
+  }).finally()
+  {
+    console.warn("Finish Execution")
+    console.warn("Clean up code...")
+  }
+</script> -->
+
+
+
+<!-- <script>
+    const p = new Promise((resolve,reject)=>{
+      //resolve("success result....")    //then call
+      reject("error result....") // catch call
+    })
+    console.log(p)
+    p.then ((result)=>{
+        console.log(p)
+       console.log(result)
+    }).catch((err)=>{
+        console.log(p)
+      console.error(err)
+    }).finally()
+    {
+      console.warn("Finish Execution")
+      console.warn("Clean up code...")
+    }
+  </script> -->
+
+  <script>
+    function function2(){
+    console.log("function2")
+    }
+
+    function function1()
+    {
+    const p = new Promise((resolve,reject)=>{
+        
+        setTimrout(()=>resolve("success result...."),3000)    //then call
+     // reject("error result....") // catch call
+    })
+    
+    p.then ((result)=>{
+       console.log("then 1")
+       console.log(result)
+       return result
+    }).then((result)=>{
+        function2(result)
+        console.log("then 2")
+    }).catch((err)=>{
+        console.error(err)
+    })
+    // .finally()
+    // {
+    //   console.warn("Finish Execution")
+    //   console.warn("Clean up code...")
+    // }
+}
+
+
+
+function1()
+function2()
+  </script>

@@ -1,0 +1,1 @@
+SELECT * FROM persondb1.person;

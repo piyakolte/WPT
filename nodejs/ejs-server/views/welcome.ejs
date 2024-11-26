@@ -1,0 +1,32 @@
+<%- include("menu")%>
+
+<h1>Guests</h1>
+<% if(guests.length) { %>
+<table>
+    <tr>
+        <th>#</th>
+        <th>name</th>
+        <th>mobile No.</th>
+    </tr>
+<% guests.forEach(function(e,i){ 
+    if(e.food)
+    {
+       
+    %>
+
+<tr>
+    <td><%=(i+1)%></td>
+    <td><%=e.name%></td>
+    <td><%=e.mobile%></td>
+</tr>
+  
+<% }
+}
+)%>
+</table>
+<% }else{ %>
+
+<h1>no guests</h1>
+    <%
+ }
+  %>

@@ -1,0 +1,115 @@
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous">
+ </head>
+ <body>
+<div class="container">
+    <div class="alert alert-primary" role="alert">
+        A simple primary alert—check it out!
+      </div>
+        <button type="hide" class="btn btn-outline-primary">Hide</button>
+        <button type="show" class="btn btn-outline-secondary">Show</button>
+        <button type="toggle" class="btn btn-outline-success">Hide/Show(toggle)</button>
+        <button type="fadein" class="btn btn-outline-danger">FadeIn</button>
+        <button type="fadeout" class="btn btn-outline-warning">FadeOut</button>
+        <button type="fadetoggle" class="btn btn-outline-info">FadeToggle</button>
+        <button type="slide-up" class="btn btn-outline-light">SlideUp</button>
+        <button type="slide-down" class="btn btn-outline-dark">SlideDown</button>
+        <button type="slide-toggle" class="btn btn-outline-link">SlideToggle</button>
+</div>
+
+
+
+
+
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script> -->
+ <script src="jquery-3.7.1.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+  crossorigin="anonymous"></script>
+ 
+<script>
+    // $(document).ready(function(){
+
+    // })
+    $(document).ready(()=>{
+        $("#hide").click(()=>{
+          $(".alert").hide(1000,() => {
+            alert()
+          })
+        }) 
+
+        $("#show").click(()=>{
+          $(".alert").show(1000,function()  {
+           const name=prompt("Enter your Good Name:")
+        //    html() innerHTML
+        //    text() innerText
+        console.log(this)
+        $(this).html("Name :"+name)
+          })
+        }) 
+
+        $("#toggle").click(()=>{
+          $(".alert").toggle(1000)
+        }) 
+    })
+
+
+    $(document).ready(()=>{
+        $("#fade-out").click(()=>{
+          $(".alert").fadeout(1000,() => {
+            alert()
+          })
+        }) 
+
+        $("#fade-in").click(()=>{
+          $(".alert").fadeIn(1000,function()  {
+           const name=prompt("Enter your Good Name:")
+        //    html() innerHTML
+        //    text() innerText
+        console.log(this)
+        $(this).html("Name :"+name)
+          })
+        }) 
+
+        $("#fade-toggle").click(()=>{
+          $(".alert").fadetoggle(1000)
+        }) 
+    })
+
+
+    $(document).ready(()=>{
+        $("#slide-up").click(()=>{
+          $(".alert").slideup(1000,() => {
+            alert()
+          })
+        }) 
+
+        $("#slide-down").click(()=>{
+          $(".alert").slidedown(1000,function()  {
+           const name=prompt("Enter your Good Name:")
+        //    html() innerHTML
+        //    text() innerText
+        console.log(this)
+        $(this).html("Name :"+name)
+          })
+        }) 
+
+        $("#slide-toggle").click(()=>{
+          $(".alert").slidetoggle(1000)
+        }) 
+    })
+
+    
+</script>
+
+</body>
+ </html>

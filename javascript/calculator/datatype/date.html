@@ -1,0 +1,140 @@
+<!-- 
+<div id="clock"></div>
+<button onclick="startclock()">start</button>
+<button onclick="stopclock()">stop</button> -->
+<!-- <div style="height:100px;
+background-color:aqua;
+display:none" id="box" class="box">
+</div> -->
+<!-- <style>
+.box{
+    height:100px;
+    width:20px;
+    background-color:#16f095;
+    display:none;
+    position: absolute;
+    /*top left right bottom*/
+    left:0px;
+    top:0cqw;
+    transition :all 2s;
+}
+</style> -->
+<script>
+// document.getElementById("box")
+// setTimeout(function()
+// {
+// box.style.display="block"
+// },2000)
+
+// setTimeout(function()
+// {
+// box.style.bagroundColor="#ff0a25"
+// box.style.width="100%"
+// box.style.left="100px"
+// box.style.top="100px"
+// },4000)
+
+
+
+/*
+const oneSecond=1000
+const oneMin=oneSecond*60
+const oneHour=oneMin*60
+const oneDay=oneHour*24
+const oneYear=oneDay*365
+
+ let d=new Date()
+ const dob=Date(2020,10,12,3,40,23,17)
+ const diffTime=d.getTime()-dob.getTime()
+ console.log((diffTime/oneYear).toFixed(0),"year")
+
+console.log(d.toLocalDateString())
+console.log(d.toLocalString("en-US",{day:'2-digit'}))
+console.log(d.toLocalString("en-US",{month:'2-digit'}))
+ */ 
+ //console.log(d.getTime()/onetofixed(2),"year")
+   // console.log(d)
+
+
+
+  /*  console.log(d.getDate())
+    console.log(d.getDay())
+    console.log(d.getMonth()+1) //month start with zero thats why add +1  (0 jan to 11 dec)
+    console.log(d.getFullYear())
+
+
+    
+    console.log(d.getHours())
+    console.log(d.getMinutes())
+    console.log(d.getSeconds())
+ */
+// let intervalId=null
+// function startclock(){
+// let clockDiv=document.getElementById("clock")
+//  intervalId=setInterval(function(){
+//         let d=new Date()
+//         clockDiv.innerHTML=`${d.getHours()}:
+//         ${d.getMinutes()}:
+//         ${d.getSeconds()}`
+//     },1000)
+// }
+// function stopclock(){
+//     clearInterval(intervalId)
+// }
+ 
+
+
+
+
+// let intervalId=null
+// let d=new Date()
+// let clockDiv=document.getElementById("clock")
+// clockDiv.innerHTML=`${d.getHours()}:
+//         ${d.getMinutes()}:
+//         ${d.getSeconds()}`
+// function startclock(){
+//  intervalId=setInterval(function(){
+//          d=new Date()
+//         clockDiv.innerHTML=`${d.getHours()}:
+//         ${d.getMinutes()}:
+//         ${d.getSeconds()}`
+//     },1000)
+// }
+// function stopclock(){
+//     clearInterval(intervalId)
+// }
+
+function getDayStr(day){
+    switch(day)
+    {
+        case 0:
+            return"sunday"
+
+        case 1:  
+            return"monday"  
+        case 2:
+            return"tuesday"
+        case 3:
+            return"wednesday"
+        case 4:
+            return"thursday"
+        case 5:
+            return"friday"
+        case 6:
+            return"saturday"
+    }
+}
+
+//const dob=Date(2020,10,12,3,40,23,17)
+// //Date(year,month,date,hr,min,sec,milisec)
+// console.log(dob)
+
+
+const dateStr=`
+${getDayStr(dob.getDay()).toUpperCase().subStr(0,3)}
+${dob.getDate()}/${dob.getMonth()}/${dob.getYear()}`
+console.log(dateStr)
+</script>
+
+
+   

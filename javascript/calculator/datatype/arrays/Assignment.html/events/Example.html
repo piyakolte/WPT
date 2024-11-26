@@ -1,0 +1,51 @@
+<body onresize ="printText()">
+    <div id="box"></div>
+     
+</body>
+<script>
+    let i=0
+    function ptintText(){
+        i++
+       // document.getElementById("box").innerHTML += innerwidth+ ","+innerHTML += outerHight+"<br>"
+     
+    }
+
+
+    let text=null
+    function getText(textField)
+    {
+        txt=textField.value
+        textField.style.backgroundColor="red"
+        textField.style.color="white"
+    }
+    function setText(textField)
+    {
+        //textField.value =txt
+        textField.style.backgroundColor="blue"
+         textField.style.color="white"
+    }
+</script>
+
+<input placeholder="copy/cut mat karna..." oncut="getText(this)">
+<input placeholder="copy/cut mat karna..." onpaste="setText(this)"> 
+<br>
+<br>
+<br>
+<input placeholder="number1" onkeyup="add()" onselect="changecolor"id="n1">
+<input placeholder="number2" onkeyup="add()" id="n2">
+<div id="result"></div>
+<script>
+
+    function changecolor(text)
+    {
+    text.style.color="pink"
+    text.backgroundcolor="black"
+    }
+
+    function add()
+    {
+        const n1=parseInt(document.getElementById("n1").value)
+        const n2=parseInt(document.getElementById("n2").value)
+        document.getElementById("result").innerText=(n1+n2)
+    }
+</script>
